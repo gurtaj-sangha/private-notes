@@ -7,7 +7,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: '*', // Adjust this to your frontend's URL for production
+    origin: '*', 
   }
 });
 app.get('/health', (req, res) => {res.json({ status: 'ok' });});
